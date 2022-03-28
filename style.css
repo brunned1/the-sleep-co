@@ -18,3 +18,16 @@ html {
 body {
     border: none;
 }
+
+
+/* ----------------- Universal styles ------------------ */
+
+
+.padded {       padding: 5%;}
+.padded-sm {    padding: 2.5%;}
+
+
+.bg-dark {
+    background-color: #192B37;
+    color: white;
+}
