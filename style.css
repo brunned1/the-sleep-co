@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+
+/* ----------------- Universal styles Remove later!! ------------------ */
+
+* {
+    padding: 0.5rem;
+    border: 2px solid;
+}
+
+html {
+    border: none;
+}
+body {
+    border: none;
 }
