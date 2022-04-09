@@ -99,11 +99,18 @@ a:hover {
 }
 /* ------------- Header Styles ----------------- */
 
+.head-img {
+    background-image: url('/images/sleep-co-1.jpg');
+    background-size: cover;
+    background-position:  center;
+    
+}
+
 header {
     padding: 1% 5%;
   }
 
-header h3 {
+ h3 {
     font-size: 5rem;
     line-height: 1;
 }
