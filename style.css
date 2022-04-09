@@ -100,10 +100,8 @@ a:hover {
 /* ------------- Header Styles ----------------- */
 
 header {
-    background-image: url('/images/sleep-co-1.jpg');
-    background-size: cover;
-    background-position:  center;
-}
+    padding: 1% 5%;
+  }
 
 header h3 {
     font-size: 5rem;
