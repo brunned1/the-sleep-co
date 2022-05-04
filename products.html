@@ -1,0 +1,44 @@
+---
+layout: default
+cards:
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/sleep-co-3.jpg
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/sleep-co-2.jpg
+- heading: Small Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  featured_image: /images/sleep-co-1.jpg
+---
+
+    <!--------------------- Header / Banner ----------------------->
+    <header class="grid-spaceBetween tall-100 md-tall-80">
+
+        {% include header-nav.html %} 
+
+        <div class="col-12 text-center">
+            <h3 class="font-weight-extra-bold editable">
+                <span class="featured-text">Sleep</span> like Nala
+            </h3>
+            <h1 class="font-weight-light editable">
+                The ultimate mattress solution
+            </h1>
+        </div>
+      </header>
+
+
+<!--------------- Cards --------------->
+<section class="grid padded">
+    {% for item in page.cards %}
+    <div class="col-4 padded-sm">
+        <div class="card">
+            <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="padded-1">
+                <h3>{{item.heading}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+ </section>
