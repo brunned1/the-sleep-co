@@ -6,6 +6,10 @@
 <head>
     <title>The Sleep Co</title>
 
+
+    <!---------             Animate on Scroll                   -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--------          Viewport for mobile phone to tell them that I can handle the sizing myself  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,20 +30,32 @@
         <!--------------------- Header / Banner ----------------------->
     <header class="grid-spaceBetween tall-100 md-tall-80">
 
-        
-<div class="header-nav col-12-top grid">
-   <div class="col-5_sm-12-middle sm-padded-b-0">
-       <a href="/index.html" class="logo">
-           <h2>The Sleep Co</h2>
-       </a>
-   </div>
-   <nav class="col-7_sm-12-middle text-right sm-text-center">
-       <a href="/index.html">Home</a>
-       <a href="/about.html">About</a>
-       <a href="/products.html">Products</a>
-       <a href="/contact.html">Contact</a>
-   </nav>
-</div> 
+        <div class="header-nav col-12-top grid">
+    <div class="col-5_sm-11-middle sm-padded-b-0">
+        <a href="/index.html" class="logo">
+            <h2>The Sleep Co</h2>
+        </a>
+    </div>
+    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+ </div>
+ <nav class="mobile-menu bg-featured padded">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/products.html">Products</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+ </nav> 
 
         <div class="col-12 text-center">
             <h3 class="font-weight-extra-bold">
@@ -61,16 +77,15 @@
         <div class="bg-bed col-6 height-70">
 
         </div>
-        <div class="bg-pug col-6 height-70">
+        <div data-aos="fade-right" class="bg-pug col-6 height-70">
 
         </div>
-        <div class="padded col-6-middle">
+        <div data-aos="fade-left" class="padded col-6-middle">
             <h2>so <span class="featured-text">soft</span> you'll melt</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam quas atque voluptatum non praesentium, accusantium neque omnis, eligendi corrupti laudantium quibusdam? Dolorum eligendi, sapiente quae sunt aut alias quam?</p>
         </div>
     </section>
 
-    <!--------------Features Section ---------------------------->
 <!--------------- Feature icons grid --------------->
 
     <section class="padded grid-center bg-dark">
@@ -159,6 +174,17 @@
     </div>
 </footer>
 
+
+
+
+<!--------------------- Add jQuery -------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--------------------- Animate on Screen   -------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-------------- custom javascript files -------------->
+<script src="/scripts.js"></script> 
 </body>
 
 </html>

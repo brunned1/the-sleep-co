@@ -1,0 +1,80 @@
+---
+layout: default
+gallery:
+- column-size: col-12
+  aspect-ratio: landscape
+  background-image: /images/sleep-co-3.jpg
+- column-size: col-6
+  aspect-ratio: square
+  background-image: /images/sleep-co-2.jpg
+- column-size: col-6
+  aspect-ratio: square
+  background-image: /images/sleep-co-4.jpg
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/sleep-co-3.jpg
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/sleep-co-2.jpg
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/sleep-co-4.jpg
+---
+
+    <!--------------------- Header / Banner ----------------------->
+    <header class="grid-spaceBetween tall-100 md-tall-80">
+
+        {% include header-nav.html %} 
+
+        <div class="col-12 text-center">
+            <h3 class="font-weight-extra-bold">
+                <span class="featured-text">Sleep</span> like Nala
+            </h3>
+            <h1 class="font-weight-light">
+                The ultimate mattress solution
+            </h1>
+        </div>
+    </header>
+
+    <!-- Original Code -->
+    <section class="padded">
+        <div class="gallery grid">
+
+            {% for item in page.gallery %}
+            <div class="{{item.column-size}}">
+                <div class="bg-image {{item.aspect-ratio}}" 
+                    style="background-image: url('{{item.background-image}}');"></div>
+              </div>
+            {% endfor %}
+            <!---
+            
+            <div class="col-6">
+              <div class="bg-image square bg-img-1"></div>
+            </div>
+            <div class="col-6">
+              <div class="bg-image square bg-img-2 bg-pos-b"></div>
+            </div>
+            <div class="col-4_xs-12">
+              <div class="bg-image portrait-tall bg-img-3"></div>
+            </div>
+            <div class="col-4_xs-12">
+              <div class="bg-image portrait-tall bg-img-4"></div>
+            </div>
+            <div class="col-4_xs-12">
+              <div class="bg-image portrait-tall "></div>
+            </div>
+            <div class="col-12">
+              <div class="bg-image landscape bg-img-5"></div>
+            </div>
+
+            -->
+        </div>
+
+
+    </section>
+
+
+    
+
+
+      

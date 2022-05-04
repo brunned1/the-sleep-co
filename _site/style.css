@@ -233,6 +233,40 @@ header {
 }
 
 
+/* Mobile Menu Styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ 
+ .mobile-menu a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+ }
+ 
+ .hamburger-button {
+    position: relative;
+    z-index: 2;
+ }
+ 
+ .hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+ }
+ 
+ /* General CSS Responsive Styles */
+ .mobile-menu {
+    display: none;
+ }
+
+
+
+
+
 
 .bg-dark { 
     background-color: rgb(60,60,65); 
@@ -243,6 +277,7 @@ header {
   .bg-light { background-color: rgb(245,245,245); }
   
   .bg-image {
+
     background-color: grey; /* Set a fall-back color while images are loading */ 
     background-size: cover;
     background-position: center; 
@@ -251,10 +286,11 @@ header {
   
   /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
   
-  .landscape     { padding-bottom: 66%;  }
-  .portrait-tall { padding-bottom: 175%; }
-  .portrait      { padding-bottom: 125%; }
-  .square        { padding-bottom: 100%; }
+  .landscape      { padding-bottom: 66%;  }
+  .landscape-wide { padding-bottom:56%;   }
+  .portrait-tall  { padding-bottom: 175%; }
+  .portrait       { padding-bottom: 125%; }
+  .square         { padding-bottom: 100%; }
   
   
   /* Background Position */
@@ -262,6 +298,13 @@ header {
   .bg-pos-b { background-position: bottom; }
   .bg-pos-l { background-position: left; }
   .bg-pos-r { background-position: right; }
+
+
+  /* Image Gallery */
+
+  .gallery [class*="col-"] {
+    padding: 0.5%;
+  }
 
 
   /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
