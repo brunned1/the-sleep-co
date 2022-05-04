@@ -1,24 +1,31 @@
 ---
 layout: default
+popup-gallery: true
 gallery:
 - column-size: col-12
   aspect-ratio: landscape
   background_image: /images/sleep-co-3.jpg
+  type: dog
 - column-size: col-6
   aspect-ratio: square
   background_image: /images/sleep-co-2.jpg
+  type: dog
 - column-size: col-6
   aspect-ratio: square
   background_image: /images/sleep-co-4.jpg
+  type: dog
 - column-size: col-4
   aspect-ratio: square
   background_image: /images/sleep-co-3.jpg
+  type: cat
 - column-size: col-4
   aspect-ratio: square
   background_image: /images/sleep-co-2.jpg
+  type: cat
 - column-size: col-4
   aspect-ratio: square
   background_image: /images/sleep-co-4.jpg
+  type: cat
 ---
 
     <!--------------------- Header / Banner ----------------------->
@@ -37,21 +44,42 @@ gallery:
     </header>
 
     <!-- Original Code -->
+
+    {% if page.popup-gallery == true %}
     <section class="padded">
+      <h2> Pop Up Gallery </h2>
         <div id="lightgallery" class="gallery grid">
 
             {% for item in page.gallery %}
+            {% if item.type == 'dog' %}
             
             <a class="{{item.column-size}}" href="{{item.background_image}}">
                 <div class="bg-image {{item.aspect-ratio}}" 
                     style="background-image: url('{{item.background_image}}');"></div>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
-
-
     </section>
 
+    {% else %}
+
+
+    <section class="padded">
+      <h2> Standard Gallery </h2>
+      <div id="lightgallery" class="gallery grid">
+
+          {% for item in page.gallery %}
+          
+          <a class="{{item.column-size}}" href="{{item.background_image}}">
+              <div class="bg-image {{item.aspect-ratio}}" 
+                  style="background-image: url('{{item.background_image}}');"></div>
+          </a>
+          {% endfor %}
+      </div>
+  </section>
+
+    {% endif %}
 
     
 
